@@ -1,9 +1,9 @@
 const http=require('http');
 const server=http.createServer((req,res)=>{
     if(req.url==='/welcome'){
-        res.writeHead(200, {"Content-Type": "application/json"});
+        res.writeHead(200);
 
-        res.write('Welcome to Dominose!');
+        res.write('Welcome to Dominos!');
         res.end();
     }
     else if(req.url==='/contact'){
@@ -15,7 +15,7 @@ const server=http.createServer((req,res)=>{
         res.end();
     }
     else{
-        res.writeHead(404, {"Content-Type": "application/json"});
+        res.writeHead(404,);
 
     }
     
